@@ -29,7 +29,7 @@ function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <Brain className="w-8 h-8 textblack fill-red" />
+            <Brain className="w-8 h-8 text-black-600 fill-red-600" />
             <span className="text-xl font-bold text-gray-800">Knowledge Hub</span>
           </Link>
           <div className="hidden md:flex space-x-8">
