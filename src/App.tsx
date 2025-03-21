@@ -15,7 +15,7 @@ function NavLink({ to, icon, text }: { to: string; icon: React.ReactNode; text: 
   return (
     <Link
       to={to}
-      className="flex items-center space-x-1 text-gray-600 hover:text-indigo-600 transition-colors"
+      className="flex items-center space-x-1 text-gray-600 hover:text-red-600 transition-colors"
     >
       {icon}
       <span>{text}</span>
@@ -29,7 +29,7 @@ function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <Brain className="w-8 h-8 text-indigo-600" />
+            <Brain className="w-8 h-8 text-red-600" />
             <span className="text-xl font-bold text-gray-800">Knowledge Hub</span>
           </Link>
           <div className="hidden md:flex space-x-8">
@@ -90,26 +90,26 @@ function HomePage() {
 
       <section className="grid md:grid-cols-3 gap-8">
         <Card
-          icon={<BookOpen className="w-8 h-8 text-red-600" fill="currentColor" />}
+          icon={<BookOpen className="w-8 h-8 text-red-600" />}
           title="Daily Business Tips"
           description="Get daily insights and practical advice drawn from real business experience."
           link="/daily-tips"
         />
         <Card
-          icon={<Trophy className="w-8 h-8 text-red-600" fill="currentColor" />}
+          icon={<Trophy className="w-8 h-8 text-red-600"/>}
           title="Experience & Achievements"
           description="Learn about my journey, certifications, and professional milestones."
           link="/about"
         />
         <Card
-          icon={<MessageSquare className="w-8 h-8 text-red-600" fill="currentColor" />}
+          icon={<MessageSquare className="w-8 h-8 text-red-600" />}
           title="Ask Questions"
           description="Get answers to your business-related questions from experienced professionals."
           link="/questions"
         />
       </section>
 
-      <section className="bg-indigo-50 rounded-xl p-8 mt-12">
+      <section className="bg-red-50 rounded-xl p-8 mt-12">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Pre-order My New Book
@@ -191,7 +191,7 @@ function Questions() {
   return (
     <div className="max-w-4xl mx-auto">
       <div className="flex items-center gap-4 mb-8">
-        <MessageSquare className="w-8 h-8 text-red-600" fill="currentColor" />
+        <MessageSquare className="w-8 h-8 text-red-600" />
         <h1 className="text-3xl font-bold text-gray-900">Questions & Answers</h1>
       </div>
       <div className="bg-white rounded-xl shadow-sm p-8 mb-8">
@@ -213,7 +213,7 @@ function Admin() {
   return (
     <div className="max-w-4xl mx-auto">
       <div className="flex items-center gap-4 mb-8">
-        <Settings className="w-8 h-8 text-indigo-600" />
+        <Settings className="w-8 h-8 text-red-600" />
         <h1 className="text-3xl font-bold text-gray-900">Admin Dashboard</h1>
       </div>
       <div className="grid md:grid-cols-2 gap-8">
