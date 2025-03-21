@@ -15,7 +15,7 @@ function NavLink({ to, icon, text }: { to: string; icon: React.ReactNode; text: 
   return (
     <Link
       to={to}
-      className="flex items-center space-x-1 text-gray-600 hover:text-red-600 transition-colors"
+      className="flex items-center space-x-1 text-gray-800 hover:text-red-600 transition-colors"
     >
       {icon}
       <span>{text}</span>
@@ -25,11 +25,11 @@ function NavLink({ to, icon, text }: { to: string; icon: React.ReactNode; text: 
 
 function Navbar() {
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-red shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <Brain className="w-8 h-8 text-red-600" />
+            <Brain className="w-8 h-8 text-black-600" fill />
             <span className="text-xl font-bold text-gray-800">Knowledge Hub</span>
           </Link>
           <div className="hidden md:flex space-x-8">
