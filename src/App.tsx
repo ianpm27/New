@@ -25,7 +25,7 @@ function NavLink({ to, icon, text }: { to: string; icon: React.ReactNode; text: 
 
 function Navbar() {
   return (
-    <nav className="bg-red shadow-lg">
+    <nav className="bg-red-500 shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
