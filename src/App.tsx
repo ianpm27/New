@@ -237,7 +237,7 @@ function Admin() {
 export default function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-red-200">
+      <div className="min-h-screen bg-gray-50">
         <Navbar />
         <main className="container mx-auto px-4 py-8">
           <Routes>
