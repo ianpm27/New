@@ -66,7 +66,7 @@ function Card({
   return (
     <Link
       to={link}
-      className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow"
+      className="block p-6 bg-red-250 rounded-xl shadow-sm hover:shadow-md transition-shadow"
     >
       <div className="mb-4">{icon}</div>
       <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
@@ -168,7 +168,7 @@ function Book() {
           guide provides essential insights and practical strategies for business
           success.
         </p>
-        <button className="inline-flex items-center px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
+        <button className="inline-flex items-center px-6 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors">
           Pre-order Now
           <ArrowRight className="ml-2 w-5 h-5" />
         </button>
@@ -237,7 +237,7 @@ function Admin() {
 export default function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-red-200">
         <Navbar />
         <main className="container mx-auto px-4 py-8">
           <Routes>
