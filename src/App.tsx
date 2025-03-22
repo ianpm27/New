@@ -15,7 +15,7 @@ function NavLink({ to, icon, text }: { to: string; icon: React.ReactNode; text: 
   return (
     <Link
       to={to}
-      className="flex items-center space-x-1 text-gray-800 hover:text-red-600 transition-colors"
+      className="flex items-center space-x-1 text-white hover:text-gray-200 transition-colors"
     >
       {icon}
       <span>{text}</span>
@@ -25,12 +25,12 @@ function NavLink({ to, icon, text }: { to: string; icon: React.ReactNode; text: 
 
 function Navbar() {
   return (
-    <nav className="bg-red-250 shadow-lg">
+    <nav className="bg-red-600 shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <Brain className="w-8 h-8 text-black-600" />
-            <span className="text-xl font-bold text-gray-800">Knowledge Hub</span>
+            <Brain className="w-8 h-8 text-white" />
+            <span className="text-xl font-bold text-white">Knowledge Hub</span>
           </Link>
           <div className="hidden md:flex space-x-8">
             <NavLink to="/" icon={<HomeIcon className="w-5 h-5" />} text="Home" />
@@ -43,7 +43,7 @@ function Navbar() {
             <NavLink
               to="/questions"
               icon={<MessageSquare className="w-5 h-5" />}
-              text="Q&A"
+              text="Questions"
             />
           </div>
         </div>
@@ -66,7 +66,7 @@ function Card({
   return (
     <Link
       to={link}
-      className="block p-6 bg-red-250 rounded-xl shadow-sm hover:shadow-md transition-shadow"
+      className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow"
     >
       <div className="mb-4">{icon}</div>
       <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
